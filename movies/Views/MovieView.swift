@@ -10,9 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        return Text("Hello World")
-            .font(.largeTitle)
-            .foregroundColor(Theme.Colors.primaryDark.color)
+        VStack(alignment: .center, spacing: 0) {
+            SearchView()
+            .edgesIgnoringSafeArea(.top)
+            Spacer()
+        }
     }
 }
 

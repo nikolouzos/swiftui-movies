@@ -14,6 +14,8 @@ struct Theme {
         case primaryDark = "#c06c84";
         case secondaryLight = "#6c5b7b";
         case secondaryDark = "#355c7d";
+        case light = "#e4f9f5";
+        case dark = "#2b2e4a";
         
         /// Turns the color to SwiftUI Color
         var color: Color? {
