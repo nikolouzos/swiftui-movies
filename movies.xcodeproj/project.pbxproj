@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E6E75DD2326EDC4004156C3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E75DC2326EDC4004156C3 /* Movie.swift */; };
 		0E6E75DF2326EEC4004156C3 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6E75DE2326EEC4004156C3 /* Ratings.swift */; };
+		0E6E75E12326F0FD004156C3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E6E75E02326F0FD004156C3 /* README.md */; };
 		0E76F9D923218C1C00AB208C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76F9D823218C1C00AB208C /* AppDelegate.swift */; };
 		0E76F9DB23218C1C00AB208C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76F9DA23218C1C00AB208C /* SceneDelegate.swift */; };
 		0E76F9DD23218C1C00AB208C /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76F9DC23218C1C00AB208C /* MoviesView.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		0E6E75DC2326EDC4004156C3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0E6E75DE2326EEC4004156C3 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		0E6E75E02326F0FD004156C3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0E76F9D523218C1C00AB208C /* movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E76F9D823218C1C00AB208C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E76F9DA23218C1C00AB208C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 			children = (
 				0E76F9D723218C1C00AB208C /* movies */,
 				0E76F9D623218C1C00AB208C /* Products */,
+				0E6E75E02326F0FD004156C3 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +177,7 @@
 			files = (
 				0E76F9E523218C1D00AB208C /* LaunchScreen.storyboard in Resources */,
 				0E76F9E223218C1D00AB208C /* Preview Assets.xcassets in Resources */,
+				0E6E75E12326F0FD004156C3 /* README.md in Resources */,
 				0E76F9DF23218C1D00AB208C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
