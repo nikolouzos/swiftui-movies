@@ -1,5 +1,5 @@
 //
-//  MoviesView.swift
+//  MainView.swift
 //  movies
 //
 //  Created by Nikolaos Rafail Nikolouzos on 5/9/19.
@@ -8,25 +8,34 @@
 
 import SwiftUI
 
-struct MoviesView: View {
+struct MainView: View {
     
     @State var movies = [Movie]()
     
     var body: some View {
-        ScrollView {
-            VStack {
+        GeometryReader { geometry in
+            VStack(spacing: 0.0) {
+                Theme.Colors.dark.color
+                    .frame(width: geometry.size.width, height: geometry.safeAreaInsets.top)
                 SearchView()
+                ScrollView {
+                    // TODO: Add the movies layout in here
+                    EmptyView()
+                }
+                .aspectRatio(contentMode: .fill)
+                .frame(width: geometry.size.width)
             }
         }
         .edgesIgnoringSafeArea(.vertical)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+// MARK: - Previews
+struct ContentViewPreviews: PreviewProvider {
     static var previews: some View {
         Group {
             ForEach(["iPhone XR", "iPhone SE"], id: \.self) { phone in
-                MoviesView()
+                MainView()
                 .previewDevice(PreviewDevice(rawValue: phone))
                 .previewDisplayName(phone)
             }
