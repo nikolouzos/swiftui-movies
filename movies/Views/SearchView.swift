@@ -19,8 +19,6 @@ struct SearchView: View {
             Text("Welcome back!")
                 .font(.title)
                 .foregroundColor(Theme.Colors.light.color)
-                .edgesIgnoringSafeArea(.top)
-                .padding(.top)
             Text("What movies will we watch today?")
                 .fontWeight(.light)
                 .multilineTextAlignment(.leading)
@@ -33,13 +31,6 @@ struct SearchView: View {
         }
         .padding()
         .background(Theme.Colors.dark.color)
-    }
-}
-
-struct SearchView_Previews: PreviewProvider {
-    static var previews: some View {
-        SearchView()
-            .previewLayout(.sizeThatFits)
     }
 }
 
@@ -65,5 +56,13 @@ struct SearchField: View {
                         .foregroundColor(Theme.Colors.secondaryLight.color))
         }
         .padding(.top, 4)
+    }
+}
+
+// MARK: - Previews
+struct SearchViewPreviews: PreviewProvider {
+    static var previews: some View {
+        SearchView()
+            .previewLayout(.sizeThatFits)
     }
 }
